@@ -7,5 +7,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let tooltip = document.querySelectorAll('.tooltipped');
     M.Tooltip.init(tooltip);
+
+    let datepicker = document.querySelectorAll('.datepicker');
+    M.Datepicker.init(datepicker, {
+      format: "dd mmm yyyy",
+      yearRange: 3,
+      showClearBtn: true,
+      i18n: {done: "Select"},
+    });
     
   });
