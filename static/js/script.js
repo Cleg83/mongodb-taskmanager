@@ -8,6 +8,9 @@ document.addEventListener('DOMContentLoaded', function() {
     let tooltip = document.querySelectorAll('.tooltipped');
     M.Tooltip.init(tooltip);
 
+    let select = document.querySelectorAll('select');
+    M.FormSelect.init(select);
+
     let datepicker = document.querySelectorAll('.datepicker');
     M.Datepicker.init(datepicker, {
       format: "dd mmm yyyy",
