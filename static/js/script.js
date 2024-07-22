@@ -1,29 +1,8 @@
-// document.addEventListener('DOMContentLoaded', function() {
-//     let sidenav = document.querySelectorAll('.sidenav');
-//     M.Sidenav.init(sidenav, {edge: "right"});
- 
-//     let collapsible = document.querySelectorAll('.collapsible');
-//     M.Collapsible.init(collapsible);
-
-//     let tooltip = document.querySelectorAll('.tooltipped');
-//     M.Tooltip.init(tooltip);
-
-//     let select = document.querySelectorAll('select');
-//     M.FormSelect.init(select);
-
-//     let datepicker = document.querySelectorAll('.datepicker');
-//     M.Datepicker.init(datepicker, {
-//       format: "dd mmm yyyy",
-//       yearRange: 3,
-//       showClearBtn: true,
-//       i18n: {done: "Select"},
-//     });
-    
-//   });
-
 document.addEventListener('DOMContentLoaded', function () {
     let sidenavs = document.querySelectorAll(".sidenav");
-    let sidenavsInstance = M.Sidenav.init(sidenavs, {edge: "right"});
+    let sidenavsInstance = M.Sidenav.init(sidenavs, {
+        edge: "right"
+    });
     let collapsibles = document.querySelectorAll(".collapsible");
     let collapsiblesInstance = M.Collapsible.init(collapsibles);
     let tooltips = document.querySelectorAll(".tooltipped");
@@ -40,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
     validateMaterializeSelect();
+
     function validateMaterializeSelect() {
         let classValid = "border-bottom: 1px solid #4caf50; box-shadow: 0 1px 0 0 #4caf50;";
         let classInvalid = "border-bottom: 1px solid #f44336; box-shadow: 0 1px 0 0 #f44336;";
